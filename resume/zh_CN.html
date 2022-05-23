@@ -1,113 +1,120 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <link rel="stylesheet" type="text/css" href="normalize/normalize.css" />
-    <link rel="stylesheet" type="text/css" href="Font-Awesome/css/all.min.css" />
-    <link rel="stylesheet" type="text/css" href="style.css" />
-  </head>
-  <body lang="en">
-    <section id="main">
-      <header id="title">
-        <h1>于浩雯</h1>
-        <span class="subtitle">硕士在读</span>
-      </header>
-      <section class="main-block">
-        <h2>
-          <i class="fa fa-folder-open"></i> 项目经验
-        </h2>
-        <section class="blocks">
-          <div class="date">
-            <span>2021-12</span><span>2022-05</span>
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" type="text/css" href="normalize/normalize.css" />
+  <link rel="stylesheet" type="text/css" href="Font-Awesome/css/all.min.css" />
+  <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body lang="en">
+  <section id="main">
+    <header id="title">
+      <h1>于浩雯</h1>
+      <span class="subtitle">硕士在读</span>
+    </header>
+    <section class="main-block">
+      <h2>
+        <i class="fa fa-folder-open"></i> 项目经验
+      </h2>
+      <section class="blocks">
+        <div class="date">
+          <span>2021-12</span><span>2022-05</span>
+        </div>
+        <div class="decorator">
+        </div>
+        <div class="details">
+          <header>
+            <h3>Vim 开源项目</h3>
+            <span class="place">贡献者</span>
+          </header>
+          <div>
+            <ul>
+              <li>永久性解决同一门语言相同内容的不同编码文件不同步问题。（统一由 UTF-8 编码格式的文件生成，拉丁字母到 ASCII 的 转换，塞尔维亚语中实现西里尔字母到拉丁字母的转换）
+                (runtime/lang/Makefile Author, src/po/Makefile Maintainer)</li>
+              <li>开发菜单翻译项解析器，成功应用于三十二门语言的菜单项分析。 (https://github.com/adaext/vim-menutrans-helper)</li>
+              <li>发现并解决 shellmenu.vim 不可打印字符导致后续维护困难问题。 (runtime/pack/dist/opt/shellmenu/plugin/shellmenu.vim
+                Maintainer)</li>
+              <li>重新设计并实现 Vim 菜单和工具栏的翻译机制，改进纯手工翻译模式，实现翻译半自动化同步。 (进行中)</li>
+              <li>修复 fish 语言 Vim 语法高亮插件拼写检查的问题。(https://github.com/inkch/vim-fish)</li>
+            </ul>
           </div>
-          <div class="decorator">
-          </div>
-          <div class="details">
-            <header>
-              <h3>Vim 开源项目</h3>
-              <span class="place">贡献者</span>
-            </header>
-            <div>
-              <ul>
-                <li>永久性解决同一门语言相同内容的不同编码文件不同步问题。（统一由 UTF-8 编码格式的文件生成，拉丁字母到 ASCII 的 转换，塞尔维亚语中实现西里尔字母到拉丁字母的转换） (runtime/lang/Makefile Author, src/po/Makefile Maintainer)</li>
-                <li>开发菜单翻译项解析器，成功应用于三十二门语言的菜单项分析。 (https://github.com/adaext/vim-menutrans-helper)</li>
-                <li>发现并解决 shellmenu.vim 不可打印字符导致后续维护困难问题。 (runtime/pack/dist/opt/shellmenu/plugin/shellmenu.vim Maintainer)</li>
-                <li>重新设计并实现 Vim 菜单和工具栏的翻译机制，改进纯手工翻译模式，实现翻译半自动化同步。 (进行中)</li>
-                <li>修复 fish 语言 Vim 语法高亮插件拼写检查的问题。(https://github.com/inkch/vim-fish)</li>
-              </ul>
-            </div>
-          </div>
-        </section>
-      </section>
-      <section class="main-block concise">
-        <h2>
-          <i class="fa fa-graduation-cap"></i> 教育背景
-        </h2>
-        <section class="blocks">
-          <div class="date">
-            <span>2020-09</span><span>至今</span>
-          </div>
-          <div class="decorator">
-          </div>
-          <div class="details">
-            <header>
-              <h3>硕士, 软件工程</h3>
-              <span class="place">华南师范大学</span>
-              <span class="location">广东, 广州</span>
-            </header>
-            <div>
-              <ul>
-                <li>连续两年获硕士一等奖学金</li>
-                <li>Yu Haowen, Liu bo, Zhou Naqin, et al. A Survey of Multi-Cloud Workflow Scheduling[J]. Computer Science. (Accepted)</li>
-              </ul>
-            </div>
-          </div>
-        </section>
-        <section class="blocks">
-          <div class="date">
-            <span>2015-09</span><span>2019-06</span>
-          </div>
-          <div class="decorator">
-          </div>
-          <div class="details">
-            <header>
-              <h3>本科, 计算机科学与技术</h3>
-              <span class="place">吉林财经大学</span>
-              <span class="location">吉林, 长春</span>
-            </header>
-            <div>
-              <ul>
-                <li>吉林省计算机程序设计大赛三等奖</li>
-                <li>吉林省数学建模大赛三等奖</li>
-                <li>校一等奖学金</li>
-              </ul>
-            </div>
-          </div>
-        </section>
+        </div>
       </section>
     </section>
-    <aside id="sidebar">
-      <div class="side-block" id="contact">
-        <h1>
-          联系方式
-        </h1>
-        <ul>
-          <li><i class="fa fa-globe"></i> https://github.com/adaext</li>
-          <li><i class="fa fa-envelope"></i> me@yuhaowen.com</li>
-        </ul>
-      </div>
-      <div class="side-block" id="skills">
-        <h1>
-          技能
-        </h1>
-        <ul>
-          <li>熟悉 Java，了解 C/C++, Python</li>
-          <li>熟悉数据结构与算法，操作系统，计算机网络，关系型数据库 MySQL 的使用。</li>
-          <li>熟练使用 GitHub, 熟悉文本的编码，Linux 命令行工具链，Makefile</li>
-          <li>熟悉云环境下的相关知识。</li>
-          <li>具备英文听说读写能力（CET-6），有全英文项目实战经验。</li>
-        </ul>
-      </div>
-    </aside>
-  </body>
+    <section class="main-block concise">
+      <h2>
+        <i class="fa fa-graduation-cap"></i> 教育背景
+      </h2>
+      <section class="blocks">
+        <div class="date">
+          <span>2020-09</span><span>至今</span>
+        </div>
+        <div class="decorator">
+        </div>
+        <div class="details">
+          <header>
+            <h3>硕士, 软件工程</h3>
+            <span class="place">华南师范大学</span>
+            <span class="location">广东, 广州</span>
+          </header>
+          <div>
+            <ul>
+              <li>连续两年获硕士一等奖学金</li>
+              <li>Yu Haowen, Liu bo, Zhou Naqin, et al. A Survey of Multi-Cloud Workflow Scheduling[J]. Computer
+                Science. (Accepted)</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="blocks">
+        <div class="date">
+          <span>2015-09</span><span>2019-06</span>
+        </div>
+        <div class="decorator">
+        </div>
+        <div class="details">
+          <header>
+            <h3>本科, 计算机科学与技术</h3>
+            <span class="place">吉林财经大学</span>
+            <span class="location">吉林, 长春</span>
+          </header>
+          <div>
+            <ul>
+              <li>吉林省计算机程序设计大赛三等奖</li>
+              <li>吉林省数学建模大赛三等奖</li>
+              <li>校一等奖学金</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </section>
+  </section>
+  <aside id="sidebar">
+    <div class="side-block" id="contact">
+      <h1>
+        联系方式
+      </h1>
+      <ul>
+        <li><i class="fa-brands fa-github"></i></i> github.com/adaext</li>
+        <li><i class="fa fa-globe"></i> yuhaowen.com</li>
+        <li><i class="fa fa-envelope"></i> me@yuhaowen.com</li>
+      </ul>
+    </div>
+    <div class="side-block" id="skills">
+      <h1>
+        技能
+      </h1>
+      <ul>
+        <li>熟悉 Java，了解 C/C++, Python</li>
+        <li>熟悉数据结构与算法，操作系统，计算机网络，关系型数据库 MySQL 的使用。</li>
+        <li>熟练使用 GitHub, 熟悉文本的编码，Linux 命令行工具链，Makefile</li>
+        <li>熟悉云环境下的相关知识。</li>
+        <li>具备英文听说读写能力（CET-6），有全英文项目实战经验。</li>
+      </ul>
+    </div>
+  </aside>
+</body>
+
 </html>
