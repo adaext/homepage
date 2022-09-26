@@ -12,15 +12,15 @@
   <section id="main">
     <header id="title">
       <h1>于浩雯</h1>
-      <span class="subtitle">硕士在读</span>
+      <span class="subtitle">2023 秋招客户端开发/后端开发</span>
     </header>
     <section class="main-block">
       <h2>
-        <i class="fa fa-suitcase"></i> 工作经历
+        <i class="fa fa-suitcase"></i> 实习经历
       </h2>
       <section class="blocks">
         <div class="date">
-          <span>2022-06</span><span>至今</span>
+          <span>2022-06</span><span>2022-09</span>
         </div>
         <div class="decorator">
         </div>
@@ -28,18 +28,86 @@
           <header>
             <h3>Google 安卓组</h3>
             <span class="place">安卓开发</span>
-            <span class="location">美国，旧金山 （远程）</span>
+            <span class="place"></span>
+            <span class="location">美国，山景城（远程）</span>
+          </header>
+        </div>
+      </section>
+      <section class="blocks">
+        <div class="date">
+          <span></span>
+        </div>
+        <div class="decorator">
+        </div>
+        <div class="details">
+          <header>
+            <h3><span style="font-weight:normal">GNSS 团队</span></h3>
+            <span class="place">(https://github.com/google/gps-measurement-tools)</span>
           </header>
           <div>
+            翻新 gps-measurement-tools 项目。
             <ul>
-              <li>用最新版本 gradle 翻新该项目，解决了 JDK、第三方库、Lint
-                的版本冲突。<br>(https://github.com/google/gps-measurement-tools/pull/31)</li>
-              <li>将 google-java-format 集成到该项目的 gradle,
-                永久性解决项目代码风格不统一问题。<br>(https://github.com/google/gps-measurement-tools/pull/36)</li>
-              <li>发现并解决项目的 API Key 暴露问题，并为添加 API Key 提供范本。<br>(https://github.com/google/gps-measurement-tools/pull/34)
-              </li>
-              <li>解决项目在 S+ 手机闪退问题。<br>(https://github.com/google/gps-measurement-tools/pull/35)</li>
+              <li>用最新版本 gradle 翻新该项目，并解决 JDK、第三方库、Lint 之间的冲突。</li>
+              <li>发现并解决 API Key 意外泄漏问题，并为在该项目中添加 API Key 提供范本。</li>
+              <li>升级 SDK 到最新版本，并解决在新版本上的 app 闪退和运行时崩溃问题。</li>
+              <li>集成 Checker Framework 到该项目，并进行静态源码分析，使部分运行时错误提前到编译时期暴露。</li>
+              <li>将 google-java-format 集成到该项目的 Gradle，永久性统一项目代码格式。</li>
             </ul>
+          </div>
+        </div>
+      </section>
+      <section class="blocks">
+        <div class="date">
+          <span></span>
+        </div>
+        <div class="decorator">
+        </div>
+        <div class="details">
+          <header>
+            <h3><span style="font-weight:normal">Android X 团队</span></h3>
+            <span class="place">(https://github.com/androidx/androidx)</span>
+          </header>
+          <div>
+            在 Android X 库中实现 Compat 类, 已进官方版本库。
+            <ul>
+              <li>为 <code>PendingIntent</code> 类提供包装类 <code>PendingIntentCompat</code>，和测试类 <code>PendingIntentCompatTest</code>。通过强制调用者在创建 <code>PendingIntent</code> 时提供
+                mutibility、在内部封装版本差异的方式，解决在 GNSS 遇到的高版本手机上的部分运行时崩溃问题。</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="blocks">
+        <div class="date">
+          <span></span>
+        </div>
+        <div class="decorator">
+        </div>
+        <div class="details">
+          <header>
+            <h3><span style="font-weight:normal">Robolectric</span></h3>
+            <span class="place">(https://github.com/robolectric/robolectric)</span>
+          </header>
+          <div>
+            改进 <code>ShadowPendingIntent</code> 类。
+            <ul>
+              <li>为 <code>ShadowPendingIntent</code> 添加 ActivityOptions 支持。解决在 Android X 遇到的 Shadow 测试无法获取并检测 options 问题。</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="blocks">
+        <div class="date">
+          <span></span>
+        </div>
+        <div class="decorator">
+        </div>
+        <div class="details">
+          <header>
+            <h3><span style="font-weight:normal">Geofencing</span></h3>
+            <span class="place">(https://github.com/android/location-samples/tree/main/Geofencing)</span>
+          </header>
+          <div>
+            翻新 Geofencing 项目，完成 location permission 的 tristate 支持。
           </div>
         </div>
       </section>
@@ -50,43 +118,6 @@
       </h2>
       <section class="blocks">
         <div class="date">
-          <span>2022-07</span><span>至今</span>
-        </div>
-        <div class="decorator">
-        </div>
-        <div class="details">
-          <header>
-            <h3>Google Android X</h3>
-            <span class="place">贡献者</span>
-          </header>
-          <div>
-            <ul>
-              <li>为 PendingIntent 类提供包装类 PendingIntentCompat，并提供测试类 PendingIntentCompatTest. </li>
-            </ul>
-          </div>
-        </div>
-      </section>
-      <section class="blocks">
-        <div class="date">
-          <span>2022-07</span><span>2022-07</span>
-        </div>
-        <div class="decorator">
-        </div>
-        <div class="details">
-          <header>
-            <h3>Robolectric</h3>
-            <span class="place">贡献者</span>
-          </header>
-          <div>
-            <ul>
-              <li>为 PendingIntent 的 Shadow 测试提供获取 options 功能 (https://github.com/robolectric/robolectric/pull/7458)</li>
-            </ul>
-          </div>
-        </div>
-      </section>
-
-      <section class="blocks">
-        <div class="date">
           <span>2021-12</span><span>至今</span>
         </div>
         <div class="decorator">
@@ -94,80 +125,37 @@
         <div class="details">
           <header>
             <h3>Vim 开源项目</h3>
-            <span class="place">贡献者</span>
+            <span class="place">活跃贡献者</span>
           </header>
           <div>
+            促进 Vim 国际化的一系列改进。
             <ul>
-              <li>永久性解决同一门语言相同内容的不同编码文件不同步问题。<br>(runtime/lang/Makefile 作者, src/po/Makefile 维护者)
-              <li>重新设计并实现 Vim 菜单和工具栏的翻译机制，改进纯手工翻译模式，实现翻译半自动化同步。<br>(https://github.com/adaext/vim-menutrans-helper, 已被 Vim 官方库引用)</li>
-              <li>发现并解决 shellmenu.vim 不可打印字符导致后续维护困难问题。 (runtime/pack/dist/opt/shellmenu/plugin/shellmenu.vim
-                Maintainer)</li>
-              <li>协同作者，应用上述模板招募 20+ 国家的志愿者参与菜单和工具栏的翻译。(进行中)</li>
-              <li>Vim 中文翻译合作作者。<br>(https://github.com/vim/vim/blob/master/src/po/zh_CN.UTF-8.po)</li>
+              <li>更新 <code>Makefile</code>, 永久性解决仅编码格式不同的文件同步问题。<br>(<code>runtime/lang/Makefile</code> 作者, <code>src/po/Makefile</code> 维护者)</li>
+              <li>设计 Vim 工具条翻译的解析器和模板，正在应用于 20+ 门语言的翻译更新。改进了纯手工翻译模式，实现翻译半自动化同步。(https://github.com/adaext/vim-menutrans-helper, 已被 Vim 官方库引用。)</li>
+              <li>与 20+ 国家的母语志愿者合作，应用上述模板进行工具条翻译重修。(进行中)</li>
+              <li>Vim 中文翻译维护者。(<code>src/po/zh_CN.UTF-8.po</code>, <code>/runtime/lang/menu_zh_cn.utf-8.vim</code>)</li>
             </ul>
           </div>
         </div>
       </section>
-    </section>
-    <section class="main-block">
-      <h2>
-        <i class="fa fa-folder-open"></i> 技能树
-      </h2>
       <section class="blocks">
         <div class="date">
+          <span>2022-01</span><span>2022-06</span>
         </div>
         <div class="decorator">
         </div>
         <div class="details">
           <header>
-            <h3>gradle, 格式化代码工具，安卓开发，Java</h3>
+            <h3>其它开源项目贡献</h3>
           </header>
+            <ul>
+              <li>修复 fish 语言 Vim 语法高亮插件拼写检查的问题。(https://github.com/inkch/vim-fish)</li>
+              <li>发现并解决 <code>shellmenu.vim</code> 不可打印字符导致后续维护困难问题。<br>(<code>vim/runtime/pack/dist/opt/shellmenu/plugin/shellmenu.vim</code> 维护者)</li>
+              <li>处理 Debian Changelog 的菜单项翻译。<br>(<code>vim/runtime/syntax/debchangelog.vim</code>)</li>
+              <li>为简历模板添加 A4 打印功能。(https://github.com/mnjul/html-resume)</li>
+            </ul>
         </div>
       </section>
-      <section class="blocks">
-        <div class="date">
-        </div>
-        <div class="decorator">
-        </div>
-        <div class="details">
-          <header>
-            <h3>Test Driven Development</h3>
-          </header>
-        </div>
-      </section>
-      <section class="blocks">
-        <div class="date">
-        </div>
-        <div class="decorator">
-        </div>
-        <div class="details">
-          <header>
-            <h3>单元测试</h3>
-          </header>
-        </div>
-      </section>
-      <section class="blocks">
-        <div class="date">
-        </div>
-        <div class="decorator">
-        </div>
-        <div class="details">
-          <header>
-            <h3>熟练使用 GitHub, 熟悉文本的编码, Makefile, Linux 命令行工具链</h3>
-          </header>
-        </div>
-      </section>
-      <section class="blocks">
-        <div class="date">
-        </div>
-        <div class="decorator">
-        </div>
-        <div class="details">
-          <header>
-            <h3>熟悉数据结构与算法，操作系统，计算机网络等计算机基础课程</h3>
-          </header>
-        </div>
-      </section>>
     </section>
     <section class="main-block concise">
       <h2>
@@ -181,15 +169,15 @@
         </div>
         <div class="details">
           <header>
-            <h3>硕士, 软件工程</h3>
+            <h3>硕士，软件工程</h3>
             <span class="place">华南师范大学</span>
-            <span class="location">广东, 广州</span>
+            <span class="location">广东，广州</span>
           </header>
           <div>
             <ul>
               <li>连续两年获硕士一等奖学金</li>
               <li>Yu Haowen, Liu bo, Zhou Naqin, et al. A Survey of Multi-Cloud Workflow Scheduling[J]. Computer
-                Science. (Accepted)</li>
+                Science.</li>
             </ul>
           </div>
         </div>
@@ -202,35 +190,60 @@
         </div>
         <div class="details">
           <header>
-            <h3>本科, 计算机科学与技术</h3>
+            <h3>本科，计算机科学与技术</h3>
             <span class="place">吉林财经大学</span>
-            <span class="location">吉林, 长春</span>
+            <span class="location">吉林，长春</span>
           </header>
-          <div>
-            <ul>
-              <li>吉林省计算机程序设计大赛三等奖</li>
-              <li>吉林省数学建模大赛三等奖</li>
-              <li>校一等奖学金</li>
-            </ul>
-          </div>
         </div>
       </section>
     </section>
   </section>
   <aside id="sidebar">
+    <div class="profile">
+      <img src="./ada_one_inch.jpg" alt="Ada" width="105px">
+    </div>
     <div class="side-block" id="contact">
       <h1>
         联系方式
       </h1>
       <ul>
-        <li><i class="fa-brands fa-github"></i></i> github.com/adaext</li>
+        <li><i class="fa-brands fa-github"></i> github.com/adaext</li>
         <li><i class="fa fa-globe"></i> yuhaowen.com</li>
         <li><i class="fa fa-envelope"></i> me@yuhaowen.com</li>
+        <li><i class="fa fa-phone"></i> +86 155-2663-4596 </li>
       </ul>
     </div>
     <div class="side-block" id="skills">
+      <h1>
+        技能栈
+      </h1>
+      <ul>
+        <li>安卓开发</li>
+        <li>Java</li>
+        <li>Java 源码静态检查</li>
+      </ul>
+      <ul>
+        <li>Gradle</li>
+        <li>格式化代码工具</li>
+        <li> Gerrit</li>
+      </ul>
+      <ul>
+        <li>测试驱动开发</li>
+        <li>单元测试 (Robolectric, Mockito)</li>
+      </ul>
+      <ul>
+        <li>Git</li>
+        <li>文本的编码</li>
+        <li>Makefile</li>
+        <li>Linux 命令行工具链</li>
+      </ul>
+      <ul>
+        <li>数据结构与算法</li>
+        <li>MySQL</li>
+        <li>操作系统</li>
+        <li>计算机网络</li>
+      </ul>
     </div>
   </aside>
 </body>
-
 </html>
