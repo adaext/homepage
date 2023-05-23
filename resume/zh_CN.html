@@ -12,27 +12,12 @@
   <section id="main">
     <header id="title">
       <h1>于浩雯</h1>
-      <span class="subtitle">2023 秋招客户端开发/后端开发</span>
+      <span class="subtitle">客户端开发/后端开发</span>
     </header>
     <section class="main-block">
       <h2>
-        <i class="fa fa-suitcase"></i> 实习经历
+        <i class="fa fa-suitcase"></i> 客户端开发经历
       </h2>
-      <section class="blocks">
-        <div class="date">
-          <span>2022-06</span><span>2022-09</span>
-        </div>
-        <div class="decorator">
-        </div>
-        <div class="details">
-          <header>
-            <h3>Google 安卓组</h3>
-            <span class="place">安卓开发</span>
-            <span class="place"></span>
-            <span class="location">美国，山景城（远程）</span>
-          </header>
-        </div>
-      </section>
       <section class="blocks">
         <div class="date">
           <span></span>
@@ -41,17 +26,14 @@
         </div>
         <div class="details">
           <header>
-            <h3><span style="font-weight:normal">GNSS 团队</span></h3>
-            <span class="place">(https://github.com/google/gps-measurement-tools)</span>
+            <h3><span style="font-weight:normal">Android X</span></h3>
+            <span class="place">(https://github.com/androidx/androidx)</span>
           </header>
           <div>
-            翻新 gps-measurement-tools 项目。
             <ul>
-              <li>用最新版本 gradle 翻新该项目，并解决 JDK、第三方库、Lint 之间的冲突。</li>
-              <li>发现并解决 API Key 意外泄漏问题，并为在该项目中添加 API Key 提供范本。</li>
-              <li>升级 SDK 到最新版本，并解决在新版本上的 app 闪退和运行时崩溃问题。</li>
-              <li>集成 Checker Framework 到该项目，并进行静态源码分析，使部分运行时错误提前到编译时期暴露。</li>
-              <li>将 google-java-format 集成到该项目的 Gradle，永久性统一项目代码格式。</li>
+              <li>安卓官方文档<code>PendingIntentCompat</code>类作者。<br>
+                （https://developer.android.com/reference/androidx/core/app/PendingIntentCompat）</li>
+              <li>在 Android X 库中实现 Compat 类和测试类, 已进官方版本库。</li>
             </ul>
           </div>
         </div>
@@ -64,14 +46,34 @@
         </div>
         <div class="details">
           <header>
-            <h3><span style="font-weight:normal">Android X 团队</span></h3>
-            <span class="place">(https://github.com/androidx/androidx)</span>
+            <h3><span style="font-weight:normal">GPSTest</span></h3>
+            <span class="place">(https://github.com/barbeau/gpstest)</span>
           </header>
           <div>
-            在 Android X 库中实现 Compat 类, 已进官方版本库。
             <ul>
-              <li>为 <code>PendingIntent</code> 类提供包装类 <code>PendingIntentCompat</code>，和测试类 <code>PendingIntentCompatTest</code>。通过强制调用者在创建 <code>PendingIntent</code> 时提供
-                mutibility、在内部封装版本差异的方式，解决在 GNSS 遇到的高版本手机上的部分运行时崩溃问题。</li>
+              <li>实现手机手表共享数据模块。</li>
+              <li>绘制手表界面。</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="blocks">
+        <div class="date">
+          <span></span>
+        </div>
+        <div class="decorator">
+        </div>
+        <div class="details">
+          <header>
+            <h3><span style="font-weight:normal">GNSS</span></h3>
+            <span class="place">(https://github.com/google/gps-measurement-tools)</span>
+          </header>
+          <div>
+            翻新 gps-measurement-tools 项目。
+            <ul>
+              <li>升级gradle并解决冲突；升级 SDK 并解决 app 闪退和运行时崩溃。</li>
+              <li>发现并解决 API Key 意外泄漏；将 google-java-format 集成到该项目的 Gradle。</li>
+              <li>集成 Checker Framework 到该项目，并进行静态源码分析。</li>
             </ul>
           </div>
         </div>
@@ -88,33 +90,14 @@
             <span class="place">(https://github.com/robolectric/robolectric)</span>
           </header>
           <div>
-            改进 <code>ShadowPendingIntent</code> 类。
-            <ul>
-              <li>为 <code>ShadowPendingIntent</code> 添加 ActivityOptions 支持。解决在 Android X 遇到的 Shadow 测试无法获取并检测 options 问题。</li>
-            </ul>
-          </div>
-        </div>
-      </section>
-      <section class="blocks">
-        <div class="date">
-          <span></span>
-        </div>
-        <div class="decorator">
-        </div>
-        <div class="details">
-          <header>
-            <h3><span style="font-weight:normal">Geofencing</span></h3>
-            <span class="place">(https://github.com/android/location-samples/tree/main/Geofencing)</span>
-          </header>
-          <div>
-            翻新 Geofencing 项目，完成 location permission 的 tristate 支持。
+            改进 <code>ShadowPendingIntent</code> 类, 添加 ActivityOptions 支持。
           </div>
         </div>
       </section>
     </section>
     <section class="main-block">
       <h2>
-        <i class="fa fa-folder-open"></i> 项目经验
+        <i class="fa fa-folder-open"></i> 其他项目经历
       </h2>
       <section class="blocks">
         <div class="date">
@@ -150,7 +133,7 @@
           </header>
             <ul>
               <li>修复 fish 语言 Vim 语法高亮插件拼写检查的问题。(https://github.com/inkch/vim-fish)</li>
-              <li>发现并解决 <code>shellmenu.vim</code> 不可打印字符导致后续维护困难问题。<br>(<code>vim/runtime/pack/dist/opt/shellmenu/plugin/shellmenu.vim</code> 维护者)</li>
+              <!-- <li>发现并解决 <code>shellmenu.vim</code> 不可打印字符导致后续维护困难问题。<br>(<code>vim/runtime/pack/dist/opt/shellmenu/plugin/shellmenu.vim</code> 维护者)</li> -->
               <li>处理 Debian Changelog 的菜单项翻译。<br>(<code>vim/runtime/syntax/debchangelog.vim</code>)</li>
               <li>为简历模板添加 A4 打印功能。(https://github.com/mnjul/html-resume)</li>
             </ul>
@@ -218,8 +201,8 @@
         技能栈
       </h1>
       <ul>
-        <li>安卓开发</li>
         <li>Java</li>
+        <li>安卓开发</li>
         <li>Java 源码静态检查</li>
       </ul>
       <ul>
