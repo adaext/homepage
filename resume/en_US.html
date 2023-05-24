@@ -11,34 +11,140 @@
 <body lang="en">
   <section id="main">
     <header id="title">
-      <h1>Ada (Haowen) Yu</h1>     
+      <h1>Ada (Haowen) Yu</h1>
+      <span class="subtitle">Android Development/ Java Backend</span>
+    </header>
     <section class="main-block">
       <h2>
-        <i class="fa fa-folder-open"></i> Project Experience
+        <i class="fa fa-suitcase"></i> Android Development Experiences
       </h2>
       <section class="blocks">
         <div class="date">
-          <span>2021-12</span><span>2022-05</span>
+          <span>2022-09</span>
+        </div>
+        <div class="decorator">
+        </div>
+        <div class="details">
+          <header>
+            <h3><span style="font-weight:normal">Android X</span></h3>
+            <span class="place"><a href="https://github.com/androidx/androidx">(https://github.com/androidx/androidx)</a></span>
+          </header>
+          <div>
+            <ul>
+              <li>Author of <code>PendingIntentCompat</code> page in the official Android documentation.<br>
+                <a href="https://developer.android.com/reference/androidx/core/app/PendingIntentCompat">(https://developer.android.com/reference/androidx/core/app/PendingIntentCompat)</a></li></li>
+              <li>Implemented a Compat class and it's test class in AndroidX library.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="blocks">
+        <div class="date">
+          <span>2023-01</span>
+        </div>
+        <div class="decorator">
+        </div>
+        <div class="details">
+          <header>
+            <h3><span style="font-weight:normal">GPSTest</span></h3>
+            <span class="place"><a href="https://github.com/barbeau/gpstest">(https://github.com/barbeau/gpstest)</a></span>
+          </header>
+          <div>
+            <ul>
+              <li>Implemented the sharing data module of phone and watch.</li>
+              <li>Implemented the watch interface.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="blocks">
+        <div class="date">
+          <span>2022-08</span>
+        </div>
+        <div class="decorator">
+        </div>
+        <div class="details">
+          <header>
+            <h3><span style="font-weight:normal">GNSS</span></h3>
+            <span class="place"><a href="https://github.com/google/gps-measurement-tools">(https://github.com/google/gps-measurement-tools)</a></span>
+          </header>
+          <div>
+            Retrofited gps-measurement-tools project.
+            <ul>
+              <li>Upgraded Gradle and solved conflicts problems, upgraded SDK and fixed all force-close issues on newer platforms.</li>
+              <li>Fixed the accidental API key leakage, integrated google-java-format to project's Gradle.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="blocks">
+        <div class="date">
+          <span>2022-07</span>
+        </div>
+        <div class="decorator">
+        </div>
+        <div class="details">
+          <header>
+            <h3><span style="font-weight:normal">Robolectric</span></h3>
+            <span class="place"><a href="https://github.com/robolectric/robolectric">(https://github.com/robolectric/robolectric)</a></span>
+          </header>
+          <div>
+            <ul>
+              <li>Added support to inspect <code>ActivityOptions</code> in <code>ShadowPendingIntent</code>.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </section>
+    <section class="main-block">
+      <h2>
+        <i class="fa fa-folder-open"></i> Other project Experiences
+      </h2>
+      <section class="blocks">
+        <div class="date">
+          <span>2021-12</span><span>Now</span>
         </div>
         <div class="decorator">
         </div>
         <div class="details">
           <header>
             <h3>Vim Open Source Project</h3>
+            <span class="place">Active Contributor</span>
+          </header>
+          <div>
+            Various of improvements in Vim internationalization.
+            <ul>
+              <li>Updated <code> Makefile</code> to synchronize same translation files in different
+                encodings.<br>(<code>runtime/lang/Makefile</code> author, <code>src/po/Makefile</code> maintainer)</li>
+              <li>Provided menu/toolbar translation parser and template to improve the translation process, and updated
+                the translations for 20+ languages.<br>(The parser and template cited by the official Vim repository <a href="https://github.com/adaext/vim-menutrans-helper">https://github.com/adaext/vim-menutrans-helper</a>)</li>
+              <li>Coordinating with native speakers to update all the menu/toolbar translations.(In process)</li>
+              <li>Vim Chinese translation maintainer.
+                <br>(<code>src/po/zh_CN.UTF-8.po</code>, <code>/runtime/lang/menu_zh_cn.utf-8.vim</code>)</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="blocks">
+        <div class="date">
+          <span>2021-12</span><span>Now</span>
+        </div>
+        <div class="decorator">
+        </div>
+        <div class="details">
+          <header>
+            <h3>Other Open Source Contributions</h3>
             <span class="place">Contributor</span>
           </header>
           <div>
             <ul>
-              <li>Provided permanent solution to the same language with the same content of different encoding file
-                synchronization problem. (runtime/lang/Makefile Author, src/po/Makefile Maintainer)</li>
-              <li>Developed menu translation item parser, which is successfully applied in 32 languages menu item
-                analysis. (https://github.com/adaext/vim-menutrans-helper)</li>
-              <li>Found and solved the problem that shellmenu.vim could not print characters, which caused subsequent
-                maintenance difficulties. (runtime/pack/dist/opt/shellmenu/plugin/shellmenu.vim Maintainer)</li>
-              <li>Redesign and implement the translation mechanism of Vim menu and toolbar, improve the manual
-                translation mode, and realize semi-automatic synchronization of translation. (In progress)</li>
               <li>Fixed spelling check issue with Vim syntax highlighting plugin for Fish
-                language.(https://github.com/inkch/vim-fish)</li>
+                language. <a href="https://github.com/inkch/vim-fish">(https://github.com/inkch/vim-fish)</a></li>
+              <!-- <li>Replaced the non-printable character used in script, which made the script difficult to edit and
+                maintain.<br>(<code>vim/runtime/pack/dist/opt/shellmenu/plugin/shellmenu.vim Maintainer</code>)</li> -->
+              <li>Fixed menu translation issue on Debian
+                Changelog.<br>(<code>vim/runtime/syntax/debchangelog.vim</code>)</li>
+              <li>Added A4 support for resume template.<a href="https://github.com/mnjul/html-resume">(https://github.com/mnjul/html-resume)</a></li>
             </ul>
           </div>
         </div>
@@ -46,11 +152,11 @@
     </section>
     <section class="main-block concise">
       <h2>
-        <i class="fa fa-graduation-cap"></i> Education
+        <i class="fa fa-graduation-cap"></i> Education Backgroud
       </h2>
       <section class="blocks">
         <div class="date">
-          <span>2020-09</span><span>Current</span>
+          <span>2020-09</span><span>Now</span>
         </div>
         <div class="decorator">
         </div>
@@ -58,12 +164,13 @@
           <header>
             <h3>Master, Software Engineering</h3>
             <span class="place">South China Normal University</span>
-            <span class="location">GuangZhou, China</span>
+            <span class="location">GuangDong, GuangZhou</span>
           </header>
           <div>
             <ul>
-              <li>The first-class scholarship of master for two consecutive years</li>
-              <li>Yu Haowen, Liu bo, Zhou Naqin, et al. A Survey of Multi-Cloud Workflow Scheduling[J]. Computer Science. (Accepted)</li>
+              <li>Master first-class scholarship, twice.</li>
+              <li>Yu Haowen, Liu bo, Zhou Naqin, et al. A Survey of Multi-Cloud Workflow Scheduling[J]. Computer
+                Science.</li>
             </ul>
           </div>
         </div>
@@ -77,16 +184,9 @@
         <div class="details">
           <header>
             <h3>Bachelor, Computer Science</h3>
-            <span class="place">Jilin University of Finance and Economics</span>
-            <span class="location">ChangChun, China</span>
+            <span class="place">Jilin University of Finance and Economics</span>
+            <span class="location">JiLin, ChangChun</span>
           </header>
-          <div>
-            <ul>
-              <li>Third prize in Jilin Province computer programming contest</li>
-              <li>Third prize of Jilin Province Mathematical Modeling Contest</li>
-              <li>University First-class Scholarship</li>
-            </ul>
-          </div>
         </div>
       </section>
     </section>
@@ -94,12 +194,13 @@
   <aside id="sidebar">
     <div class="side-block" id="contact">
       <h1>
-        Contact Info
+        CONTACT INFO
       </h1>
       <ul>
-        <li><i class="fa-brands fa-github"></i></i> github.com/adaext</li>
+        <li><i class="fa-brands fa-github"></i> github.com/adaext</li>
         <li><i class="fa fa-globe"></i> yuhaowen.com</li>
         <li><i class="fa fa-envelope"></i> me@yuhaowen.com</li>
+        <li><i class="fa fa-phone"></i> +86 155-2663-4596 </li>
       </ul>
     </div>
     <div class="side-block" id="skills">
@@ -107,11 +208,31 @@
         Skills
       </h1>
       <ul>
-        <li>Java, C/C++, Python.</li>
-        <li>Data Structure and Algorithm, Operating System, Computer Network, MySQL.</li>
-        <li>Git, text encoding, Linux command line tool chain, Makefile.</li>
-        <li>English</li>
+        <li>Java</li>
+        <li>Android development</li>
       </ul>
+      <ul>
+        <li>Gradle, Code format tool, Gerrit</li>
+      </ul>
+      <ul>
+        <li>Jetpack Compose</li>
+        <li>Test Driven Development</li>
+        <li>Unit Test (Robolectric, Mockito)</li>
+      </ul>
+      <ul>
+        <li>Git</li>
+        <li>Text Encoding</li>
+        <li>Makefile</li>
+        <li> Linux command line tool chain</li>
+      </ul>
+      <ul>
+        <li>Data Structure and Algorithms</li>
+        <li>MySQL</li>
+        <li>Operating System</li>
+        <li>Computer Network</li>
+      </ul>
+    </div>
+    <div class="side-block" id="skills">
     </div>
   </aside>
 </body>
