@@ -16,23 +16,8 @@
     </header>
     <section class="main-block">
       <h2>
-        <i class="fa fa-suitcase"></i> Internship Experiences
+        <i class="fa fa-suitcase"></i> Android Development Experiences
       </h2>
-      <section class="blocks">
-        <div class="date">
-          <span>2022-06</span><span>Now</span>
-        </div>
-        <div class="decorator">
-        </div>
-        <div class="details">
-          <header>
-            <h3>Google Android Team</h3>
-            <span class="place">Android Developer</span>
-            <span class="place"></span>
-            <span class="location">Mountain View, United States (work remotely)</span>
-          </header>
-        </div>
-      </section>
       <section class="blocks">
         <div class="date">
           <span></span>
@@ -41,19 +26,14 @@
         </div>
         <div class="details">
           <header>
-            <h3><span style="font-weight:normal">GNSS Team</span></h3>
-            <span class="place">(https://github.com/google/gps-measurement-tools)</span>
+            <h3><span style="font-weight:normal">Android X</span></h3>
+            <span class="place"><a href="https://github.com/androidx/androidx">(https://github.com/androidx/androidx)</a></span>
           </header>
           <div>
-            Retrofited gps-measurement-tools project.
             <ul>
-              <li>Upgraded Gradle to the latest version and solved the conflicts between JDK, third-party library, and
-                Lint.</li>
-              <li>Fixed the accidental API key leakage through build-in google map broken and provide API Key adding
-                template.</li>
-              <li>Upgraded the target SDK to the latest, and fixed all force-close issues on newer platforms.</li>
-              <li>Integrated Checker Framework to apply source code static analysis.</li>
-              <li>Integrated google-java-format to help enforce unified code style.</li>
+              <li>Author of <code>PendingIntentCompat</code> page in the official Android documentation.<br>
+                <a href="https://developer.android.com/reference/androidx/core/app/PendingIntentCompat">(https://developer.android.com/reference/androidx/core/app/PendingIntentCompat)</a></li></li>
+              <li>Implemented a Compat class and it's test class in AndroidX library.</li>
             </ul>
           </div>
         </div>
@@ -66,13 +46,33 @@
         </div>
         <div class="details">
           <header>
-            <h3><span style="font-weight:normal">Android X</span></h3>
-            <span class="place">(https://github.com/androidx/androidx)</span>
+            <h3><span style="font-weight:normal">GPSTest</span></h3>
+            <span class="place"><a href="https://github.com/barbeau/gpstest">(https://github.com/barbeau/gpstest)</a></span>
           </header>
           <div>
-            Implemented a Compat class in AndroidX library.
             <ul>
-              <li>Implemented <code>PendingIntentCompat</code> to enforce mutibility.</li>
+              <li>Implemented the sharing data module of phone and watch.</li>
+              <li>Implemented the watch interface.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="blocks">
+        <div class="date">
+          <span></span>
+        </div>
+        <div class="decorator">
+        </div>
+        <div class="details">
+          <header>
+            <h3><span style="font-weight:normal">GNSS Team</span></h3>
+            <span class="place"><a href="https://github.com/google/gps-measurement-tools">(https://github.com/google/gps-measurement-tools)</a></span>
+          </header>
+          <div>
+            Retrofited gps-measurement-tools project.
+            <ul>
+              <li>Upgraded Gradle and solved conflicts problems, upgraded SDK and fixed all force-close issues on newer platforms.</li>
+              <li>Fixed the accidental API key leakage, integrated google-java-format to project's Gradle.</li>
             </ul>
           </div>
         </div>
@@ -86,36 +86,19 @@
         <div class="details">
           <header>
             <h3><span style="font-weight:normal">Robolectric</span></h3>
-            <span class="place">(https://github.com/robolectric/robolectric)</span>
+            <span class="place"><a href="https://github.com/robolectric/robolectric">(https://github.com/robolectric/robolectric)</a></span>
           </header>
           <div>
-            Made improvement to <code>ShadowPendingIntent</code> in Robolectric when working on Android X
             <ul>
               <li>Added support to inspect <code>ActivityOptions</code> in <code>ShadowPendingIntent</code>.</li>
             </ul>
           </div>
         </div>
       </section>
-      <section class="blocks">
-        <div class="date">
-          <span></span>
-        </div>
-        <div class="decorator">
-        </div>
-        <div class="details">
-          <header>
-            <h3><span style="font-weight:normal">Geofencing</span></h3>
-            <span class="place">(https://github.com/android/location-samples/tree/main/Geofencing)</span>
-          </header>
-          <div>
-            Retrofited Geofencing project, added tristate support for location permission.
-          </div>
-        </div>
-      </section>
     </section>
     <section class="main-block">
       <h2>
-        <i class="fa fa-folder-open"></i> Project Experiences
+        <i class="fa fa-folder-open"></i> Other project Experiences
       </h2>
       <section class="blocks">
         <div class="date">
@@ -135,8 +118,8 @@
                 encodings.<br>(<code>runtime/lang/Makefile</code> author, <code>src/po/Makefile</code> maintainer)</li>
               <li>Provided menu/toolbar translation parser and template to improve the translation process, and updated
                 the translations for 20+ languages. (The parser and template have been cited by the official Vim
-                repository)</li>
-              <li>Coordinating with native speakers to update all the menu/toolbar translations.</li>
+                repository<a href="https://github.com/adaext/vim-menutrans-helper">https://github.com/adaext/vim-menutrans-helper</a>)</li>
+              <li>Coordinating with native speakers to update all the menu/toolbar translations.(In process)</li>
               <li>Vim Chinese translation maintainer.
                 <br>(<code>src/po/zh_CN.UTF-8.po</code>, <code>/runtime/lang/menu_zh_cn.utf-8.vim</code>)</li>
             </ul>
@@ -157,12 +140,12 @@
           <div>
             <ul>
               <li>Fixed spelling check issue with Vim syntax highlighting plugin for Fish
-                language. (https://github.com/inkch/vim-fish)</li>
-              <li>Replaced the non-printable character used in script, which made the script difficult to edit and
-                maintain.<br>(<code>vim/runtime/pack/dist/opt/shellmenu/plugin/shellmenu.vim Maintainer</code>)</li>
+                language. <a href="https://github.com/inkch/vim-fish">(https://github.com/inkch/vim-fish)</a></li>
+              <!-- <li>Replaced the non-printable character used in script, which made the script difficult to edit and
+                maintain.<br>(<code>vim/runtime/pack/dist/opt/shellmenu/plugin/shellmenu.vim Maintainer</code>)</li> -->
               <li>Fixed menu translation issue on Debian
                 Changelog.<br>(<code>vim/runtime/syntax/debchangelog.vim</code>)</li>
-              <li>Added A4 support for resume template. (https://github.com/mnjul/html-resume)</li>
+              <li>Added A4 support for resume template.<a href="https://github.com/mnjul/html-resume">(https://github.com/mnjul/html-resume)</a></li>
             </ul>
           </div>
         </div>
@@ -226,14 +209,14 @@
         Skills
       </h1>
       <ul>
-        <li>Android development</li>
         <li>Java</li>
-        <li>Java Static Source Code Check</li>
+        <li>Android development</li>
       </ul>
       <ul>
         <li>Gradle, Code format tool, Gerrit</li>
       </ul>
       <ul>
+        <li>Jetpack Compose</li>
         <li>Test Driven Development</li>
         <li>Unit Test (Robolectric, Mockito)</li>
       </ul>
